@@ -16,9 +16,17 @@ e => console.log('onError: %s', e),
 () => console.log('#2 onCompleted'));
 
 
-// => onNext: 1
-// => onNext: 2
-// => onNext: 3
-// => onNext: 4
-// => onNext: 5
-// => onCompleted
+/* output
+#1 onNext: 1
+#1 onNext: 2
+#1 onNext: 3
+#1 onNext: 4
+#1 onNext: 5
+#1 onCompleted
+#2 onNext: 1
+#2 onNext: 2
+#2 onNext: 3
+#2 onNext: 4
+#2 onNext: 5
+#2 onCompleted
+*/
